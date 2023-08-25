@@ -1,0 +1,8 @@
+#!/bin/bash
+set -v 
+pkill rmiregistry
+sleep 1
+rmiregistry &
+java -Djava.security.policy=../TelephoneTelecharge/java.policy Serveur 
+
+
